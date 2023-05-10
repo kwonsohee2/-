@@ -83,7 +83,7 @@ body {
     display: none;
     color:white;
     text-align : center;
-    padding : 300px 3px;
+    padding : 200px 0;
   }
   
   .result-container h1 {
@@ -124,8 +124,6 @@ body {
   .img-box{
     width: 200px;
   }
-
-
   .blinking{
     -webkit-animation:blink 1.5s ease-in-out infinite alternate;
     -moz-animation:blink 1.5s ease-in-out infinite alternate;
@@ -143,9 +141,10 @@ body {
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
   .kakao{
     color: white;
-    background-color: #FEE500;
+    background-color: #FF9100;
     font-size: 20px;
     border: 0px;
     border-radius: 20px;

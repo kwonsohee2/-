@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -26,20 +27,21 @@
     <div class="cont question-container bg-light mx-auto mt-5" >
       <div class="box mx-auto mt-5">
         <div class="progress mx-auto mt-5">
-            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: calc(100/12*1%);"></div>
         </div>
-        <h3 id="question" class="mt-5">질문</h3>
+        <h3 id="question" class="mt-5"><b>질문</b></h3>
         <p id="type">EI</p>
         <button id="a" class="btn btn-dark">1</button>
         <button id="b" class="btn btn-dark">2</button>
       </div>
     </div>
-
+    
     <div class="cont result-container bg-dark mx-auto mt-5">
-        <h3 id="mbti">MBTI</h3>
+        <h1 id="mbti"><b>MBTI</b></h1>
+        <h5 id="animal">동물</h5>
         <p id="explain">설명</p>
-        <img id="result-img" src="" alt="">
         <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+        
     </div>
 
     <div class="score-container">
