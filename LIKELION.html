@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아기사자의 MBTI검사</title>
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="LIKELION.css">
+</head>
+<body class="container">
+ 
+    <div class="cont title-container">
+        <h1>아기사자의 MBTI검사</h1>
+        <img  src="C:\Users\Home_Work\Desktop\likelion\likelion.png" alt="likelionImage">
+        <p>
+        멋쟁이 사자처럼
+        </p>
+        <div id="test" class="blinking">
+        <button id="startBtn" class="btn btn-dark">테스트 시작하러 가기</button>
+        </div>
+    </div>
+
+    <div class="cont question-container bg-light mx-auto mt-5" >
+      <div class="box mx-auto mt-5">
+        <div class="progress mx-auto mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <h3 id="question" class="mt-5">질문</h3>
+        <p id="type">EI</p>
+        <button id="a" class="btn btn-dark">1</button>
+        <button id="b" class="btn btn-dark">2</button>
+      </div>
+    </div>
+
+    <div class="cont result-container bg-dark mx-auto mt-5">
+        <h3 id="mbti">MBTI</h3>
+        <p id="explain">설명</p>
+        <img id="result-img" src="" alt="">
+        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">공유하기</button>
+    </div>
+
+    <div class="score-container">
+        <input id="EI" type="text" class="input" value="0">
+        <input id="SN" type="text" class="input" value="0">
+        <input id="TF" type="text" class="input" value="0">
+        <input id="JP" type="text" class="input" value="0">
+    </div>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="LIKELION.js"></script>
+</body>
+</html>
