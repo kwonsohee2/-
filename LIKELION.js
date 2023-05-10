@@ -1,4 +1,3 @@
-
 const titleContainer = document.querySelector(".title-container");
 const titleBtn = document.querySelector("#startBtn");
 const questionContainer = document.querySelector('.question-container');
@@ -15,7 +14,7 @@ const MBTI = document.querySelector('#mbti');
 const explain = document.querySelector('#explain');
 const image = document.querySelector('#result-img');
 const resultContainer = document.querySelector('.result-container'); 
-const url = 'https://twelvelovetype.netlify.app/';
+
 
 
 const q = {
@@ -24,7 +23,7 @@ const q = {
     3: {"title": "에스컬레이터를 탈때 나는?", "type": "SN", "A": "그냥 타고 올라감", "B": "만약 이 에스컬레이터가 무너진다면?어떡하지 상상을 함"},
     4: {"title": "친구가 나한테 나 시험 망쳤어,,라고 한다면?", "type": "TF", "A": "그러게 왜 벼락치기를 했어", "B": "괜찮아~다음이 있잖아!!"},
     5: {"title": "사람들과 모이는 자리에서 나는?", "type": "EI", "A": "먼저 말 꺼냄", "B": "가만히 듣고 있음"},
-    6: {"title": "인터넷에서 쇼핑을 한다면?", "type": "JP", "A": "리뷰를 다 읽어보고 판단해야 겠다", "B": "흠 대충 봤을때 괜찮은거 같으니 사야지"},
+    6: {"title": "인터넷에서 쇼핑을 한다면?", "type": "JP", "A": "리뷰를 다 읽어보고 판단해야겠다", "B": "흠 봤을때 괜찮은거 같으니 사야지"},
     7: {"title": "친해지려고 하는 사람이 카톡을 안 본다", "type": "TF", "A": "바쁘나 보네", "B": "왜 안 보지,,내가 실수한게 있나?"},
     8: {"title": "공휴일에 나는?", "type": "EI", "A": "오예~친구들이랑 놀러 가야지", "B": "드디어 공휴일,,집에 쉬어야지,,"},
     9: {"title": "친구가 놀기로 하였는데 급한 사정으로 인해 못 나온다고 했다. 이때 나는?", "type": "TF", "A": "아 못 나오구나,,우리끼리 놀자", "B": "알겠다고는 했지만 엥 무슨 일이지?라는 생각을 함"},
@@ -120,34 +119,3 @@ let qIdx = 0;
 goNext(qIdx);
 
 
-function setShare(){
-    var resultImg = document.querySelector('#resultImg');
-    var resultAlt = resultImg.firstElementChild.alt;
-    const shareTitle = '십이간지 연애유형 결과';
-    const shareDes = infoList[resultAlt].name;
-    const shareImage = url + 'img/image-' + resultAlt + '.png';
-    const shareURL = url + 'page/result-' + resultAlt + '.html';
-  
-    Kakao.Link.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: shareTitle,
-        description: shareDes,
-        imageUrl: shareImage,
-        link: {
-          mobileWebUrl: shareURL,
-          webUrl: shareURL
-        },
-      },
-  
-      buttons: [
-        {
-          title: '결과확인하기',
-          link: {
-            mobileWebUrl: shareURL,
-            webUrl: shareURL,
-          },
-        },
-      ]
-    });
-  }
